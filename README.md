@@ -8,6 +8,7 @@ Film collections automatically updated twice a day.
 | Steven Spielberg Feature Films | [JSON](https://film-collections.simse.io/steven-spielberg-feature-films.json) |
 | Pixar Films | [JSON](https://film-collections.simse.io/pixar-films.json) |
 | Marvel Cinematic Universe | [JSON](https://film-collections.simse.io/marvel-cinematic-universe.json) |
+| Apple TV+ Original films | [JSON](https://film-collections.simse.io/apple-tv-original-films.json) |
 
 ## Questions and Answers
 **Is X collection up to date?**

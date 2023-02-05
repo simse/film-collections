@@ -15,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        collection: ['christopher_nolan', 'steven_spielberg', 'pixar', 'marvel_cinematic_universe']
+        collection: ['christopher_nolan', 'steven_spielberg', 'pixar', 'marvel_cinematic_universe', 'apple_tv_plus_original_films']
     steps:
       - 
         name: Check out repository code
