@@ -7,6 +7,7 @@ Film collections automatically updated twice a day.
 | Christopher Nolan Feature Films | [JSON](https://film-collections.simse.io/christopher-nolan-feature-films.json) |
 | Steven Spielberg Feature Films | [JSON](https://film-collections.simse.io/steven-spielberg-feature-films.json) |
 | Pixar Films | [JSON](https://film-collections.simse.io/pixar.json) |
+| Marvel Cinematic Universe | [JSON](https://film-collections.simse.io/marvel-cinematic-universe.json) |
 
 ## Questions and Answers
 **Is X collection up to date?**
