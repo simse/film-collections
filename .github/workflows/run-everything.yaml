@@ -1,0 +1,35 @@
+name: Run all Collections
+on: [push]
+
+jobs:
+  run-collection:
+    runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: false
+      matrix:
+        collection: ['christopher_nolen']
+    steps:
+      - 
+        name: Check out repository code
+        uses: actions/checkout@v3
+      - 
+        name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - 
+        name: Install just
+        uses: extractions/setup-just@v1
+      -
+        name: Install Python
+        uses: actions/setup-python@v4
+      -
+        name: Install dependencies
+        run: pip install -r requirements.txt
+      -
+        name: Run collection notebook
+        run: just run ${{ matrix.collection }}
+        env:
+          R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME }}
+          R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_ACCESS_KEY_SECRET: ${{ secrets.R2_ACCESS_KEY_SECRET }}
