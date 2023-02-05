@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'collections/**'
+      - '.github/workflows/run-everything.yaml'
   schedule:
     - cron: '0 0,12 * * *'
 
