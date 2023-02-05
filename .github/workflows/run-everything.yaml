@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        collection: ['christopher_nolan']
+        collection: ['christopher_nolan', 'steven_spielberg']
     steps:
       - 
         name: Check out repository code
