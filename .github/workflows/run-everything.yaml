@@ -7,7 +7,7 @@ on:
       - 'collections/**'
       - '.github/workflows/run-everything.yaml'
   schedule:
-    - cron: '0 0,12 * * *'
+    - cron: '17 0,12 * * *'
 
 jobs:
   run-collection:
